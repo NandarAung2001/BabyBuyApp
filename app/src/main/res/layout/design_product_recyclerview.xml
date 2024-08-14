@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:clickable="true"
+    android:background="@drawable/babybuy_lunching_logo">
+
+
+    <LinearLayout
+        android:id="@+id/imagelayout"
+        android:background="#65DCE5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/product_img_id"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorBlack"
+            android:scaleType="centerCrop" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/product_title_id"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="left"
+                android:text="Title"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                cardview:layout_constraintStart_toStartOf="parent"
+                cardview:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/product_des_id"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="left"
+                android:inputType="textMultiLine"
+                android:text="Description"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                cardview:layout_constraintStart_toStartOf="parent"
+                cardview:layout_constraintTop_toBottomOf="@+id/product_title_id" />
+
+            <TextView
+                android:id="@+id/product_quantity_id"
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="Quantity"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                cardview:layout_constraintStart_toStartOf="parent"
+                cardview:layout_constraintTop_toBottomOf="@+id/product_des_id" />
+
+            <TextView
+                android:id="@+id/productpurchased"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/black"
+                android:text="Purchased"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                cardview:layout_constraintStart_toStartOf="parent"
+                cardview:layout_constraintTop_toBottomOf="@+id/product_quantity_id" />
+
+            <TextView
+                android:id="@+id/productpurchasedstatus"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/black"
+                android:text="No"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                cardview:layout_constraintStart_toEndOf="@+id/productpurchased"
+                cardview:layout_constraintTop_toBottomOf="@+id/product_quantity_id" />
+
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left|bottom"
+                android:text="Price"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                cardview:layout_constraintStart_toStartOf="parent"
+                cardview:layout_constraintTop_toBottomOf="@+id/productpurchased" />
+
+            <TextView
+                android:id="@+id/product_price_id"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left|bottom"
+                android:text="30000"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                cardview:layout_constraintStart_toEndOf="@id/product_price"
+                cardview:layout_constraintTop_toBottomOf="@+id/productpurchased" />
+
+
+            <TableLayout
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:stretchColumns="1"
+                cardview:layout_constraintEnd_toEndOf="parent"
+                cardview:layout_constraintTop_toTopOf="parent">
+
+                <TableRow
+                    android:layout_width="75dp"
+                    android:layout_height="38dp">
+
+                    <ImageView
+                        android:id="@+id/productlistsms"
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_sms"
+                        android:backgroundTint="@color/address" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+
+                        android:id="@+id/productlistmap"
+                        android:layout_width="45dp"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_map"
+                        android:backgroundTint="@color/bbcolor" />
+                </TableRow>
+
+                <TableRow android:layout_height="43dp">
+
+                    <ImageView
+
+                        android:id="@+id/productlistedit"
+                        android:layout_width="20dp"
+                        android:layout_height="34dp"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_edit"
+                        android:backgroundTint="@color/colorBlack" />
+                </TableRow>
+
+            </TableLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

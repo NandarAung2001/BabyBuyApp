@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+            <item
+                android:id="@+id/mcategory"
+                android:icon="@drawable/ic_category"
+                android:title="Category" />
+            <item
+                android:id="@+id/mproduct"
+                android:icon="@drawable/ic_product"
+                android:title="Manage Product" />
+
+
+            <item
+                android:id="@+id/msendsms"
+                android:icon="@drawable/ic_sms"
+                android:title="SMS" />
+            <item
+                android:id="@+id/msizechart"
+                android:icon="@drawable/ic_show_chart"
+                android:title="Chart" />
+            <item
+                android:id="@+id/mmuser"
+                android:icon="@drawable/ic_setting"
+                android:title="User Profile" />
+
+            <item
+                android:id="@+id/mlogout"
+                android:icon="@drawable/ic_logout"
+                android:title="Exit" />
+
+</menu>

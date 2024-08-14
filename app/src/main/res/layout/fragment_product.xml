@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical"
+    tools:context=".Fragments.ManProdFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/purchasedprodfrag"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Purchased Item "
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/tobuyprod"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Unpurchased Item"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/pruductmanagerecy"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

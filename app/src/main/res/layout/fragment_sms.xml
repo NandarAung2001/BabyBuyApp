@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:foregroundTint="#00504848"
+    android:id="@+id/sms">
+
+    <LinearLayout
+        android:id="@+id/stoptoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="#49BEFF"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/sbackimgf"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/ic_arrow_back"
+            android:contentDescription="TODO" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Send SMS Now"
+        android:textColor="#3F51B5"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <EditText
+        android:id="@+id/smobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/ic_input_bg"
+        android:backgroundTint="@color/transparent_black"
+        android:ems="14"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Mobile number"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/stitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_input_bg"
+        android:backgroundTint="@color/transparent_black"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Product Title"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/smobile"
+        app:layout_constraintStart_toStartOf="@+id/smobile"
+        app:layout_constraintTop_toBottomOf="@+id/smobile" />
+
+    <EditText
+        android:id="@+id/sdescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_input_bg"
+        android:backgroundTint="@color/transparent_black"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/stitle"
+        app:layout_constraintStart_toStartOf="@+id/stitle"
+        app:layout_constraintTop_toBottomOf="@+id/stitle" />
+
+
+    <EditText
+        android:id="@+id/squnatity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_input_bg"
+        android:backgroundTint="@color/transparent_black"
+        android:drawablePadding="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/sdescription"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sdescription"
+        app:layout_constraintTop_toBottomOf="@+id/sdescription" />
+
+    <EditText
+        android:id="@+id/sprice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_input_bg"
+        android:backgroundTint="@color/transparent_black"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Price"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/squnatity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/squnatity"
+        app:layout_constraintTop_toBottomOf="@+id/squnatity" />
+
+    <EditText
+
+        android:id="@+id/slocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_input_bg"
+        android:backgroundTint="@color/transparent_black"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Location postal code"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/squnatity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/squnatity"
+        app:layout_constraintTop_toBottomOf="@+id/sprice" />
+
+
+    <Button
+        android:id="@+id/btnsendsms"
+        android:layout_width="225dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#49BEFF"
+        android:text="Send SMS"
+        android:textSize="22dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/sprice"
+        app:layout_constraintStart_toStartOf="@+id/sprice"
+        app:layout_constraintTop_toBottomOf="@+id/slocation" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

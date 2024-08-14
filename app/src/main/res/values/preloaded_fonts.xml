@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+
+        <item>@font/abril_fatface</item>
+        <item>@font/akronim</item>
+        <item>@font/alatsi</item>
+        <item>@font/allan</item>
+        <item>@font/butcherman</item>
+    </array>
+</resources>
